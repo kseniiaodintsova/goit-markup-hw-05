@@ -164,7 +164,6 @@ body {
 .contact-info:hover,
 .contact-info:focus {
   color: var(--focus-color);
-
 }
 .header-conteiner {
   display: flex;
@@ -223,7 +222,6 @@ body {
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--focus-color);
-
 }
 
 /* ========== /Hero section ========== */
@@ -374,7 +372,7 @@ body {
   gap: 16px;
 }
 
-.footer-social-wrap{
+.footer-social-wrap {
   transition: background-color var(--duration);
 }
 
@@ -385,10 +383,10 @@ body {
 
 /* ========== /Footer ========== */
 
-
 /* --------------------------------------------- portfolio */
 .filter-btn {
-  transition: color var(--duration), background-color var(--duration), border var(--duration), box-shadow var(--duration);
+  transition: color var(--duration), background-color var(--duration),
+    border var(--duration), box-shadow var(--duration);
   font-family: 'Roboto', sans-serif;
   font-weight: inherit;
   font-size: 16px;
@@ -435,20 +433,19 @@ body {
   width: calc((100% - 48px) / 3);
   transition: box-shadow var(--duration), border var(--duration);
 }
-.projects-item:hover ,
-.projects-item:focus  {
+.projects-item:hover,
+.projects-item:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border: var(--background);
 }
-.projects-link{
+.projects-link {
   display: block;
 }
-.projects-thumb{  
-position: relative;
-overflow: hidden;
- }
-
+.projects-thumb {
+  position: relative;
+  overflow: hidden;
+}
 
 .projects-text {
   padding-top: 32px;
@@ -459,13 +456,12 @@ overflow: hidden;
   border-left: 1px solid var(--footer-text);
 }
 
-.overlay{
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
   transform: translate(0, 100%);
   transition: transform var(--duration);
   font-weight: 400;
@@ -477,62 +473,62 @@ overflow: hidden;
   padding-bottom: 164px;
   padding-right: 32px;
   background-color: var(--brand-color);
-  
 }
 .projects-link:hover .overlay,
-.projects-link:focus .overlay{
-  transform: translate(0,0);
+.projects-link:focus .overlay {
+  transform: translate(0, 0);
 }
 /* ---------------------MODAL WINDOW */
 
-.backdrop{
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
   width: 100%;
   height: 100%;
-  background-color: rgba(46, 47, 66, 0.4); 
+  background-color: rgba(46, 47, 66, 0.4);
   transition: opacity var(--duration), visibility var(--duration);
 }
-.backdrop.is-hidden{
+.backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
 
-.modal{
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 408px;
   height: 576px;
-  background-color: #FCFCFC;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-.madal-close-btn{
+.madal-close-btn {
   position: absolute;
   top: 24px;
   right: 24px;
- display: flex;
- justify-content: center;
- align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 24px;
   height: 24px;
   padding: 0;
   background: var(--footer-text);
- border: 1px solid rgba(0, 0, 0, 0.1);
- border-radius: 50%;
- transition: background-color var(--duration);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition: background-color var(--duration);
 }
 .madal-close-btn:hover,
 .madal-close-btn:focus {
   background-color: var(--focus-color);
   border: var(--focus-color);
 }
-.modal-close-btn-icon{
+.modal-close-btn-icon {
   transition: fill var(--duration);
 }
 
